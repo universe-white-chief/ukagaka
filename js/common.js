@@ -343,30 +343,30 @@ var WCC = {
 		this.tools.setCookie("is_closechuncai", '', 60 * 60 * 24 * 30 * 1000);
 	},
 
-	// setTime: function() {
-	// 	this.data.tol++;
-	// 	//document.body.innerHTML(this.data.tol);
-	// 	this.data.timenum = window.setTimeout("WCC.setTime('" + this.data.tol + "')", 1000);
-	// 	if (parseInt(this.data.tol) == parseInt(this.data.goal)) {
-	// 		this.stopTalkSelf();
-	// 		this.closeChuncaiMenu();
-	// 		this.closeNotice();
+	 setTime: function() {
+	 	this.data.tol++;
+	 	//document.body.innerHTML(this.data.tol);
+	 	this.data.timenum = window.setTimeout("WCC.setTime('" + this.data.tol + "')", 1000);
+	 	if (parseInt(this.data.tol) == parseInt(this.data.goal)) {
+	 		this.stopTalkSelf();
+	 		this.closeChuncaiMenu();
+	 		this.closeNotice();
 
-	// 		if (this.data.this_ghost['closeInput']) {
-	// 			this.data.this_ghost.closeInput();
-	// 		}
+	 		if (this.data.this_ghost['closeInput']) {
+	 			this.data.this_ghost.closeInput();
+	 		}
 
-	// 		this.chuncaiSay("主人跑到哪里去了呢....");
-	// 		this.setFace(3);
-	// 		this.stoptime();
-	// 	}
-	// },
+	 		this.chuncaiSay("主人跑到哪里去了呢....");
+	 		this.setFace(3);
+	 		this.stoptime();
+	 	}
+	 },
 
-	// stoptime: function() {
-	// 	if (this.data.timenum) {
-	// 		clearTimeout(this.data.timenum);
-	// 	}
-	// },
+	 stoptime: function() {
+	 	if (this.data.timenum) {
+	 		clearTimeout(this.data.timenum);
+	 	}
+	 },
 
 	//渐进的方式显示内容
 	typeWords: function() {

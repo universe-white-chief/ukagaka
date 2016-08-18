@@ -162,8 +162,6 @@ var ghost = {
 	     
 	     $.getJSON( ghost.data.WCC.data._weichuncai_path, { time: new Date().getTime() } )
 			.done(function( dat ) {
-			    console.log('==>' + dat);
-
 				$(".wcc .dialog_chat_loading").css('display', "none");
                 //$("#dialog_chat").fadeIn("normal");
                 $(".wcc .tempsaying").css('display', "");
@@ -234,7 +232,7 @@ var ghost = {
                 }
 			})
 			.fail(function( jqxhr, textStatus, error ) {
-				ghost.data.WCC.chuncaiSay('好像出错了，是什么错误呢...请联系管理猿');
+				ghost.data.WCC.chuncaiSay('好像出错了，是什么错误呢...请联系管理员白社长');
 		});
     }
 };
