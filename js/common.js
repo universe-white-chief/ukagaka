@@ -25,7 +25,7 @@ var WCC = {
 
 		talkself_arr: [
 			//话语，脸部的表情
-			["白日依山尽，黄河入海流，欲穷千里目，更上.....一层楼？", "1"],
+			["主人是个神奇的存在", "1"],
 			["我看见主人熊猫眼又加重了！", "3"],
 			["我是不是很厉害呀～～？", "2"],
 			["5555...昨天有个小孩子跟我抢棒棒糖吃.....", "3"],
@@ -84,12 +84,12 @@ var WCC = {
 			}
 		});
 
-		// $(".wcc .chuncaiface").mousemove(function() {
-		// 	WCC.stoptime();
-		// 	WCC.data.tol = 0;
-		// 	WCC.setTime();
-		// 	WCC.chuncaiSay("啊，野生的主人出现了！ ～～～O口O");
-		// });
+        $(".wcc .chuncaiface").mousemove(function() {
+            WCC.stoptime();
+            WCC.data.tol = 0;
+            WCC.setTime();
+            WCC.chuncaiSay("啊，野生的主人出现了！ ～～～O口O");
+        });
 		this.talkSelf(this.data.talktime);
 
 		$(".wcc.smchuncai").mouseover(function() {

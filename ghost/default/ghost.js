@@ -4,7 +4,7 @@ var ghost = {
         ['chatTochuncai', '聊&nbsp;&nbsp;&nbsp;&nbsp;天'],
         ['foods', '吃 零 食'],
         ['meetparents', '见 家 长'],
-        ['lifetimechuncai', '生存时间']
+        ['lifetimechuncai', '陪伴时间']
     ],
 
     data: {
@@ -134,10 +134,10 @@ var ghost = {
         this.data.WCC.closeChuncaiMenu();
         this.data.WCC.closeNotice();
         //$("#getmenu").css("display", "none");
-        this.data.WCC.chuncaiSay("马上就跳转到我父母去了哦～～～");
+        this.data.WCC.chuncaiSay("马上就跳转到白社长那里噜");
         ghost.data.WCC.setFace(2);
         setTimeout(function() {
-            window.location.href = 'https://github.com/DrayChou/ukagaka/';
+            window.location.href = 'https://github.com/universe-white-chief/ukagaka/';
         }, 2000);
     },
 
