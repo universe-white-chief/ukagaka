@@ -92,13 +92,13 @@ var WCC = {
 //        });
 //		this.talkSelf(this.data.talktime);
 
-		$(".wcc.smchuncai").mouseover(function() {
-			if (talkobj) {
-				clearTimeout(talkobj);
-			}
-			WCC.data.talktime = 0;
-			WCC.talkSelf(WCC.data.talktime);
-		});
+//		$(".wcc.smchuncai").mouseover(function() {
+//			if (talkobj) {
+//				clearTimeout(talkobj);
+//			}
+//			WCC.data.talktime = 0;
+//			WCC.talkSelf(WCC.data.talktime);
+//		});
 
 		//判断春菜是否处于隐藏状态
 		var is_closechuncai = this.tools.getCookie("is_closechuncai");
