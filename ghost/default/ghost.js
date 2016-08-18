@@ -193,8 +193,9 @@ var ghost = {
                     ghost.data.WCC.chuncaiSay(showlifetime);
 
                 } else if (el == 'talking') {
-
                     var talkcon = $(".wcc .talk").val();
+                    console.log("u say: " + talkcon);
+
                     var i = ghost.data.WCC.tools.in_array(talkcon, dat.ques);
                     var types = typeof(i);
                     if (types != 'boolean') {
