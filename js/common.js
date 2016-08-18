@@ -90,15 +90,15 @@ var WCC = {
 //            WCC.setTime();
 //            WCC.chuncaiSay("啊，野生的主人出现了！ ～～～O口O");
 //        });
-//		this.talkSelf(this.data.talktime);
+		this.talkSelf(this.data.talktime);
 
-//		$(".wcc.smchuncai").mouseover(function() {
-//			if (talkobj) {
-//				clearTimeout(talkobj);
-//			}
-//			WCC.data.talktime = 0;
-//			WCC.talkSelf(WCC.data.talktime);
-//		});
+		$(".wcc.smchuncai").mouseover(function() {
+			if (talkobj) {
+				clearTimeout(talkobj);
+			}
+			WCC.data.talktime = 0;
+			WCC.talkSelf(WCC.data.talktime);
+		});
 
 		//判断春菜是否处于隐藏状态
 		var is_closechuncai = this.tools.getCookie("is_closechuncai");
@@ -343,30 +343,30 @@ var WCC = {
 		this.tools.setCookie("is_closechuncai", '', 60 * 60 * 24 * 30 * 1000);
 	},
 
-	 setTime: function() {
-	 	this.data.tol++;
-	 	//document.body.innerHTML(this.data.tol);
-	 	this.data.timenum = window.setTimeout("WCC.setTime('" + this.data.tol + "')", 1000);
-	 	if (parseInt(this.data.tol) == parseInt(this.data.goal)) {
-	 		this.stopTalkSelf();
-	 		this.closeChuncaiMenu();
-	 		this.closeNotice();
-
-	 		if (this.data.this_ghost['closeInput']) {
-	 			this.data.this_ghost.closeInput();
-	 		}
-
-	 		this.chuncaiSay("主人跑到哪里去了呢....");
-	 		this.setFace(3);
-	 		this.stoptime();
-	 	}
-	 },
-
-	 stoptime: function() {
-	 	if (this.data.timenum) {
-	 		clearTimeout(this.data.timenum);
-	 	}
-	 },
+//	 setTime: function() {
+//	 	this.data.tol++;
+//	 	//document.body.innerHTML(this.data.tol);
+//	 	this.data.timenum = window.setTimeout("WCC.setTime('" + this.data.tol + "')", 1000);
+//	 	if (parseInt(this.data.tol) == parseInt(this.data.goal)) {
+//	 		this.stopTalkSelf();
+//	 		this.closeChuncaiMenu();
+//	 		this.closeNotice();
+//
+//	 		if (this.data.this_ghost['closeInput']) {
+//	 			this.data.this_ghost.closeInput();
+//	 		}
+//
+//	 		this.chuncaiSay("主人跑到哪里去了呢....");
+//	 		this.setFace(3);
+//	 		this.stoptime();
+//	 	}
+//	 },
+//
+//	 stoptime: function() {
+//	 	if (this.data.timenum) {
+//	 		clearTimeout(this.data.timenum);
+//	 	}
+//	 },
 
 	//渐进的方式显示内容
 	typeWords: function() {
