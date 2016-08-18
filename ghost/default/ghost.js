@@ -160,7 +160,7 @@ var ghost = {
         $(".wcc .tempsaying").css('display', "none");
         $(".wcc .dialog_chat_loading").fadeIn("normal");
 	     
-	     $.getJSON( ghost.data.WCC.data._weichuncai_path+'&jsoncallback=?', { time: new Date().getTime() } )
+	     $.getJSON( ghost.data.WCC.data._weichuncai_path+'?jsoncallback=?&', { time: new Date().getTime() } )
 			.done(function( dat ) {
 			    console.log('==>' + dat);
 
