@@ -84,13 +84,13 @@ var WCC = {
 			}
 		});
 
-        $(".wcc .chuncaiface").mousemove(function() {
-            WCC.stoptime();
-            WCC.data.tol = 0;
-            WCC.setTime();
-            WCC.chuncaiSay("啊，野生的主人出现了！ ～～～O口O");
-        });
-		this.talkSelf(this.data.talktime);
+//        $(".wcc .chuncaiface").mousemove(function() {
+//            WCC.stoptime();
+//            WCC.data.tol = 0;
+//            WCC.setTime();
+//            WCC.chuncaiSay("啊，野生的主人出现了！ ～～～O口O");
+//        });
+//		this.talkSelf(this.data.talktime);
 
 		$(".wcc.smchuncai").mouseover(function() {
 			if (talkobj) {
