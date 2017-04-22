@@ -101,7 +101,7 @@ var ghost = {
             ghost.data.WCC.setFace(3);
             this.closechuncai_evil();
         } else if (parseInt(gettimes) > parseInt(7)) {
-            this.data.WCC.chuncaiSay(".....................肚子要炸了，死也不要再吃了～～！！！TAT");
+            this.data.WCC.chuncaiSay("..............肚子要炸了，人家不要吃吃了辣～～！！！TAT");
             ghost.data.WCC.setFace(3);
         } else if (parseInt(gettimes) == parseInt(5)) {
             this.data.WCC.chuncaiSay("我已经吃饱了，不要再吃啦......");
@@ -156,13 +156,13 @@ var ghost = {
      * 读取数据
      */
      getdata: function(el, id) {
-		//$("#dialog_chat").fadeOut("normal");
+         //$("#dialog_chat").fadeOut("normal");
         $(".wcc .tempsaying").css('display', "none");
         $(".wcc .dialog_chat_loading").fadeIn("normal");
-	     
-	     $.getJSON( ghost.data.WCC.data._weichuncai_path, { time: new Date().getTime() } )
-			.done(function( dat ) {
-				$(".wcc .dialog_chat_loading").css('display', "none");
+
+        $.getJSON( ghost.data.WCC.data._weichuncai_path, { time: new Date().getTime() } )
+            .done(function( dat ) {
+                $(".wcc .dialog_chat_loading").css('display', "none");
                 //$("#dialog_chat").fadeIn("normal");
                 $(".wcc .tempsaying").css('display', "");
 
@@ -202,7 +202,7 @@ var ghost = {
                         ghost.data.WCC.chuncaiSay(dat.ans[i]);
                         ghost.data.WCC.setFace(2);
                     } else {
-                        ghost.data.WCC.chuncaiSay('.......................嗯？');
+                        ghost.data.WCC.chuncaiSay('嗯？');
                         ghost.data.WCC.setFace(3);
                     }
                     ghost.clearInput();
@@ -231,9 +231,9 @@ var ghost = {
                     return arr;
 
                 }
-			})
-			.fail(function( jqxhr, textStatus, error ) {
-				ghost.data.WCC.chuncaiSay('好像出错了，是什么错误呢...请联系管理员白社长');
-		});
+            })
+            .fail(function( jqxhr, textStatus, error ) {
+                ghost.data.WCC.chuncaiSay('好像出错了，是什么错误呢...请联系管理员白社长');
+            });
     }
 };
